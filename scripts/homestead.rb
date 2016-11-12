@@ -262,5 +262,12 @@ class Homestead
         ]
       end
     end
+	
+	#Update composer dependencies on Provision
+	config.vm.provision "shell" do |s|
+      s.name = "Update Composer dependencies"
+      s.inline = "cd ~/Code && composer update"
+      s.privileged = false
+    end
   end
 end
