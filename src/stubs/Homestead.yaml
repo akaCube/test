@@ -10,7 +10,7 @@ keys:
     - ~/.ssh/id_rsa.pub
 
 folders:
-    - map: <dein pfad>/Code
+    - map: <dein pfad>/PJS/Code
       to: /home/vagrant/Code
 
 sites:
